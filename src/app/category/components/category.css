@@ -1,0 +1,38 @@
+h2 {
+  font-family: Arial, sans-serif;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  max-width: 400px;
+}
+
+li {
+  background: #ffffff;
+  margin-bottom: 10px;
+  padding: 14px 16px;
+  border-radius: 10px;
+  border: 1px solid #eee;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.06);
+
+  font-family: Arial, sans-serif;
+  transition: 0.2s ease;
+
+  display: flex;
+  align-items: center;
+}
+
+li:hover {
+  transform: translateY(-2px);
+  background: #f3f8ff;
+  border-color: #cce0ff;
+}
+
+span {
+  font-weight: 500;
+  color: #333;
+  font-weight: bold;
+}

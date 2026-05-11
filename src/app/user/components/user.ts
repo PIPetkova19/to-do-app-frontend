@@ -4,11 +4,12 @@ import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-user',
-    standalone: true,
+  standalone: true,
   imports: [CommonModule],
   templateUrl: './user.html',
- styleUrl:'./user.css'
+  styleUrl:'./user.css'
 })
+
 export class UserComponent implements OnInit {
 
   users: any[] = [];
