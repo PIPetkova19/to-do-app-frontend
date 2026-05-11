@@ -1,21 +1,33 @@
-h2 {
+body {
   font-family: Arial, sans-serif;
-  color: #222;
-  margin-bottom: 20px;
+  background: #fafafa;
 }
 
+/* TITLE */
+h2 {
+  font-family: Arial, sans-serif;
+  color: #c2185b;
+  margin-bottom: 20px;
+  text-align: center; /* 👈 центрирано */
+}
+
+/* LIST */
 ul {
   list-style: none;
   padding: 0;
+
   max-width: 400px;
+  margin: auto; /* 👈 центриране */
 }
 
+/* ITEM */
 li {
   background: #ffffff;
   margin-bottom: 10px;
   padding: 14px 16px;
-  border-radius: 10px;
-  border: 1px solid #eee;
+
+  border-radius: 12px;
+  border: 1px solid #f3c6d6; /* 👈 soft pink */
   box-shadow: 0 3px 8px rgba(0,0,0,0.06);
 
   font-family: Arial, sans-serif;
@@ -25,14 +37,25 @@ li {
   align-items: center;
 }
 
+/* hover */
 li:hover {
   transform: translateY(-2px);
-  background: #f3f8ff;
-  border-color: #cce0ff;
+  background: #fff0f6; /* 👈 light pink background */
+  border-color: #f8a8c4;
 }
 
+/* TEXT */
 span {
-  font-weight: 500;
+  font-weight: 600;
   color: #333;
-  font-weight: bold;
+}
+
+/* optional pink accent line */
+li::before {
+  content: "";
+  width: 4px;
+  height: 100%;
+  background: #f48fb1;
+  margin-right: 10px;
+  border-radius: 4px;
 }

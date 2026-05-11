@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background: #fff7fa; /* soft pink background */
+  background: #fff7fa;
 }
 
 /* TITLE */
@@ -9,45 +9,37 @@ h2 {
   color: #c2185b;
   margin-bottom: 20px;
   text-align: center;
-  font-weight: 600;
 }
 
-/* LIST WRAPPER */
-ul {
-  list-style: none;
-  padding: 0;
-  max-width: 900px;
-  margin: auto;
-}
-
-/* CARD (balonceta) */
-li {
+/* MAIN CARD */
+.task-card {
   background: #ffffff;
-  margin-bottom: 15px;
-  padding: 18px;
+  margin: auto;
+  max-width: 600px;
+  padding: 20px;
   border-radius: 14px;
 
-  border: 1px solid #f8bbd0; /* soft pink border */
+  border: 1px solid #f8bbd0; /* pink border */
   box-shadow: 0 4px 14px rgba(194, 24, 91, 0.08);
 
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
 
   transition: 0.2s ease;
 }
 
 /* hover */
-li:hover {
+.task-card:hover {
   transform: translateY(-3px);
   box-shadow: 0 8px 20px rgba(194, 24, 91, 0.15);
   border-color: #f48fb1;
 }
 
-/* TITLE inside card */
+/* TITLE */
 h3 {
   margin: 0;
-  font-size: 18px;
+  font-size: 20px;
   color: #ad1457;
 }
 
@@ -58,12 +50,11 @@ p {
   font-size: 14px;
 }
 
-/* TAGS (span baloncheta) */
+/* SPANS (tags) */
 span {
   display: inline-block;
   padding: 6px 10px;
-  margin-right: 6px;
-  margin-top: 6px;
+  margin-top: 5px;
 
   border-radius: 999px;
   font-size: 12px;
@@ -72,7 +63,19 @@ span {
   border: 1px solid #f8bbd0;
 }
 
-/* SPECIAL COLORS */
+/* soft pink variations */
 span:nth-of-type(1) { background: #fce4ec; } /* due date */
 span:nth-of-type(2) { background: #f8bbd0; } /* priority */
 span:nth-of-type(3) { background: #f3e5f5; } /* status */
+
+/* META INFO */
+small {
+  display: block;
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-size: 12px;
+  background: #fdf2f7;
+  color: #6a1b4d;
+  margin-top: 5px;
+  border: 1px solid #f8bbd0;
+}

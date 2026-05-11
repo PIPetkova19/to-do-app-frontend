@@ -1,0 +1,40 @@
+<div *ngIf="task">
+
+  <h2>Task Details</h2>
+
+  <h3>{{ task.title }}</h3>
+
+  <p>{{ task.description }}</p>
+
+  <div>
+    <small>Due Date: {{ task.dueDate }}</small>
+  </div>
+
+  <div>
+    <small>Priority: {{ task.priority }}</small>
+  </div>
+
+  <div>
+    <small>Status: {{ task.status }}</small>
+  </div>
+
+  <hr>
+
+  <div>
+    <small>Category: {{ task.category?.title }}</small>
+  </div>
+
+  <div>
+    <small>Owner: {{ task.ownerUser?.fullName }}</small>
+  </div>
+
+  <div>
+    <small>Assigned: {{ task.assignedUser?.fullName }}</small>
+  </div>
+
+</div>
+
+<!-- loading fallback -->
+<div *ngIf="!task">
+  Loading...
+</div>

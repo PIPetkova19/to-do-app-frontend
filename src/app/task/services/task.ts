@@ -13,4 +13,8 @@ constructor(private http: HttpClient){}
 getTasks(){
   return this.http.get<any[]>(this.apiUrl);
 }
+
+getTaskById(id: number){
+    return this.http.get<any>(`${this.apiUrl}/${id}`);
+}
 }

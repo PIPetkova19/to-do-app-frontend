@@ -11,17 +11,8 @@
     <span>{{ task.priority }}</span>
     <span> {{ task.status }}</span>
 
-    <div>
-      <small>Category: {{ task.category?.title }}</small>
-    </div>
-
-    <div>
-      <small>Owner: {{ task.ownerUser?.fullName }}</small>
-    </div>
-
-    <div>
-      <small>Assigned: {{ task.assignedUser?.fullName }}</small>
-    </div>
-
+      <a [routerLink]="['/details', task.id]">
+  See more
+</a>
   </li>
 </ul>
