@@ -1,0 +1,23 @@
+a {
+  margin-right: 12px;
+  text-decoration: none;
+  color: #444;
+  font-weight: 600;
+
+  padding: 8px 14px;
+  border-radius: 8px;
+
+  transition: all 0.2s ease;
+  display: inline-block;
+}
+
+a:hover {
+  background: #007bff;
+  color: white;
+  transform: translateY(-1px);
+}
+
+a.active {
+  background: #333;
+  color: white;
+}
