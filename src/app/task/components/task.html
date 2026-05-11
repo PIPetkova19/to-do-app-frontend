@@ -2,13 +2,26 @@
 
 <ul>
   <li *ngFor="let task of tasks">
-    <span>{{ task.title }}</span>
-    <span>{{ task.description }}</span>    
-    <span>{{ task.dueDate }}</span>
+
+    <h3>{{ task.title }}</h3>
+
+    <p>{{ task.description }}</p>
+
+    <span> {{ task.dueDate }}</span>
     <span>{{ task.priority }}</span>
-    <span>{{ task.status }}</span>
-    <span>{{ task.category }}</span>
-    <span>{{ task.ownerUser }}</span>
-    <span>{{ task?.assignedUser }}</span>
+    <span> {{ task.status }}</span>
+
+    <div>
+      <small>Category: {{ task.category?.title }}</small>
+    </div>
+
+    <div>
+      <small>Owner: {{ task.ownerUser?.fullName }}</small>
+    </div>
+
+    <div>
+      <small>Assigned: {{ task.assignedUser?.fullName }}</small>
+    </div>
+
   </li>
 </ul>

@@ -7,40 +7,55 @@ h2 {
 ul {
   list-style: none;
   padding: 0;
-  max-width: 800px;
+  max-width: 900px;
 }
 
 li {
   background: #ffffff;
   margin-bottom: 15px;
-  padding: 16px;
-  border-radius: 12px;
+  padding: 18px;
+  border-radius: 14px;
   border: 1px solid #eee;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.06);
 
   font-family: Arial, sans-serif;
-  transition: 0.2s ease;
 
   display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+  flex-direction: column;
+  gap: 8px;
+
+  transition: 0.2s ease;
 }
 
 li:hover {
   transform: translateY(-3px);
-  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #1a4fff;
+}
+
+p {
+  margin: 0;
+  color: #555;
+  font-size: 14px;
 }
 
 span {
-  background: #f5f7fa;
-  padding: 6px 10px;
-  border-radius: 6px;
-  font-size: 13px;
+  display: inline-block;
+  padding: 5px 10px;
+  margin-right: 6px;
+  margin-top: 6px;
+
+  border-radius: 8px;
+  font-size: 12px;
+  background: #f3f4f6;
   color: #333;
 }
 
-span:first-child {
-  font-weight: 600;
-  background: #e6f0ff;
-  color: #1a4fff;
-}
+span:nth-child(3) { background: #e6f0ff; } /* due date */
+span:nth-child(4) { background: #fff4e5; } /* priority */
+span:nth-child(5) { background: #e6ffed; } /* status */
