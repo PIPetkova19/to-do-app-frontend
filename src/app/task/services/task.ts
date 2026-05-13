@@ -1,5 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Task } from '../../models/task';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
@@ -10,11 +12,11 @@ private apiUrl='http://localhost:8081/api/tasks';
 
 constructor(private http: HttpClient){}
 
-getTasks(){
-  return this.http.get<any[]>(this.apiUrl);
+getTasks(): Observable<Task[]>{
+  return this.http.get<Task[]>(this.apiUrl);
 }
 
-getTaskById(id: number){
-    return this.http.get<any>(`${this.apiUrl}/${id}`);
+getTaskById(id: number):  Observable<Task> {
+    return this.http.get<Task>(`${this.apiUrl}/${id}`);
 }
 }

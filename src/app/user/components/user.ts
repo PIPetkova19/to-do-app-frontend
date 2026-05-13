@@ -1,6 +1,7 @@
 import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
 import { UserService } from '../services/user';
 import { CommonModule } from '@angular/common';
+import { User } from '../../models/user';
 
 @Component({
   selector: 'app-user',
@@ -12,7 +13,7 @@ import { CommonModule } from '@angular/common';
 
 export class UserComponent implements OnInit {
 
-  users: any[] = [];
+  users: User[] = [];
 
   constructor(private service: UserService, private cdr: ChangeDetectorRef) {}
 

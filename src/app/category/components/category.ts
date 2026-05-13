@@ -1,6 +1,7 @@
 import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CategoryService } from '../services/category';
+import { Category } from '../../models/category';
 
 @Component({
   selector: 'app-category',
@@ -11,7 +12,7 @@ import { CategoryService } from '../services/category';
 })
 
 export class CategoryComponent implements OnInit{
-  categories: any[] = [];
+  categories: Category[] = [];
 
   constructor(private service: CategoryService, private cdr: ChangeDetectorRef) {}
 

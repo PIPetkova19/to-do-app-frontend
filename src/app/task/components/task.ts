@@ -2,6 +2,7 @@ import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TaskService } from '../services/task';
 import { Router,RouterLink } from '@angular/router';
+import { Task } from '../../models/task';
 
 @Component({
   selector: 'app-task',
@@ -12,12 +13,12 @@ import { Router,RouterLink } from '@angular/router';
 })
 
 export class TaskComponent  implements OnInit{
- tasks: any[] = [];
+ tasks: Task[] = [];
 
   constructor(private service: TaskService, private cdr: ChangeDetectorRef,private router: Router) {}
 
 
-  goToDetails(id: number) {
+  goToDetails(id: number): void{
     this.router.navigate(['/details', id]);
   }
 
