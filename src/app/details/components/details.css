@@ -3,7 +3,6 @@ body {
   background: #fff7fa;
 }
 
-/* TITLE */
 h2 {
   font-family: Arial, sans-serif;
   color: #c2185b;
@@ -11,51 +10,42 @@ h2 {
   text-align: center;
 }
 
-/* MAIN CARD */
 .task-card {
   background: #ffffff;
   margin: auto;
   max-width: 600px;
   padding: 20px;
   border-radius: 14px;
-
-  border: 1px solid #f8bbd0; /* pink border */
+  border: 1px solid #f8bbd0; 
   box-shadow: 0 4px 14px rgba(194, 24, 91, 0.08);
-
   display: flex;
   flex-direction: column;
   gap: 12px;
-
   transition: 0.2s ease;
 }
 
-/* hover */
 .task-card:hover {
   transform: translateY(-3px);
   box-shadow: 0 8px 20px rgba(194, 24, 91, 0.15);
   border-color: #f48fb1;
 }
 
-/* TITLE */
 h3 {
   margin: 0;
   font-size: 20px;
   color: #ad1457;
 }
 
-/* DESCRIPTION */
 p {
   margin: 0;
   color: #555;
   font-size: 14px;
 }
 
-/* SPANS (tags) */
 span {
   display: inline-block;
   padding: 6px 10px;
   margin-top: 5px;
-
   border-radius: 999px;
   font-size: 12px;
   color: #6a1b4d;
@@ -63,12 +53,11 @@ span {
   border: 1px solid #f8bbd0;
 }
 
-/* soft pink variations */
-span:nth-of-type(1) { background: #fce4ec; } /* due date */
-span:nth-of-type(2) { background: #f8bbd0; } /* priority */
-span:nth-of-type(3) { background: #f3e5f5; } /* status */
+span:nth-of-type(1) { background: #fce4ec; } 
+span:nth-of-type(2) { background: #f8bbd0; } 
+span:nth-of-type(3) { background: #f3e5f5; } 
 
-/* META INFO */
+
 small {
   display: block;
   padding: 6px 10px;

@@ -3,54 +3,45 @@ body {
   background: #fafafa;
 }
 
-/* TITLE */
 h2 {
   font-family: Arial, sans-serif;
   color: #c2185b;
   margin-bottom: 20px;
-  text-align: center; /* 👈 центрирано */
+  text-align: center; 
 }
 
-/* LIST */
 ul {
   list-style: none;
   padding: 0;
-
   max-width: 400px;
-  margin: auto; /* 👈 центриране */
+  margin: auto; 
 }
 
-/* ITEM */
+
 li {
   background: #ffffff;
   margin-bottom: 10px;
   padding: 14px 16px;
-
   border-radius: 12px;
-  border: 1px solid #f3c6d6; /* 👈 soft pink */
+  border: 1px solid #f3c6d6; 
   box-shadow: 0 3px 8px rgba(0,0,0,0.06);
-
   font-family: Arial, sans-serif;
   transition: 0.2s ease;
-
   display: flex;
   align-items: center;
 }
 
-/* hover */
 li:hover {
   transform: translateY(-2px);
-  background: #fff0f6; /* 👈 light pink background */
+  background: #fff0f6; 
   border-color: #f8a8c4;
 }
 
-/* TEXT */
 span {
   font-weight: 600;
   color: #333;
 }
 
-/* optional pink accent line */
 li::before {
   content: "";
   width: 4px;
