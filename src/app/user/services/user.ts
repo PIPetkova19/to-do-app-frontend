@@ -14,4 +14,15 @@ export class UserService {
   getUsers(): Observable<User[]> {
     return this.http.get<User[]>(this.apiUrl);
   }
+
+submitApp(firstName: string, lastName: string, email: string): Observable<User> {
+
+  const user = {
+    firstName,
+    lastName,
+    email
+  };
+
+  return this.http.post<User>(this.apiUrl, user);
+}
 }

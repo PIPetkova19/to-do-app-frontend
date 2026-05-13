@@ -21,15 +21,15 @@
   <hr>
 
   <div>
-    <small>Category: {{ task.category?.title }}</small>
+    <small>Category: {{ task.categoryId }}</small>
   </div>
 
   <div>
-    <small>Owner: {{ task.ownerUser?.fullName }}</small>
+    <small>Owner: {{ task.ownerUserId }}</small>
   </div>
 
   <div>
-    <small>Assigned: {{ task.assignedUser?.fullName }}</small>
+    <small>Assigned: {{ task?.assignedUserId}}</small>
   </div>
 
 }

@@ -1,5 +1,5 @@
-export interface User {
+export interface User { //kakvo backenda vrashta response dto
     id: number;
-    fullName: String;
-    email: String;
+    fullName: string;
+    email: string;
 }
