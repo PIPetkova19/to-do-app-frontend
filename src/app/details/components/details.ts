@@ -2,6 +2,7 @@ import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { TaskService } from '../../task/services/task';
 import { CommonModule } from '@angular/common';
+import { Task } from '../../models/task';
 
 @Component({
   selector: 'app-details',
@@ -12,7 +13,7 @@ import { CommonModule } from '@angular/common';
 })
 export class DetailsComponent implements OnInit {
 
-  task: any;
+  task!: Task;
 
   constructor(
     private route: ActivatedRoute,

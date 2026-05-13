@@ -1,4 +1,4 @@
-<div *ngIf="task">
+@if (task) {
 
   <h2>Task Details</h2>
 
@@ -32,9 +32,10 @@
     <small>Assigned: {{ task.assignedUser?.fullName }}</small>
   </div>
 
-</div>
+}
+@else{
+  <div>
+    Loading...
+  </div>
+}
 
-<!-- loading fallback -->
-<div *ngIf="!task">
-  Loading...
-</div>
