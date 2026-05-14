@@ -20,18 +20,11 @@
 
   <hr>
 
-  <div>
-    <small>Category: {{ task.categoryId }}</small>
-  </div>
-
-  <div>
-    <small>Owner: {{ task.ownerUserId }}</small>
-  </div>
-
-  <div>
-    <small>Assigned: {{ task?.assignedUserId}}</small>
-  </div>
-
+  <span> {{ task.category.title }}</span>
+  <span>{{ task.ownerUser.fullName }}</span>
+  @if(task.assignedUser){
+    <span>Assigned: {{ task.assignedUser.fullName }}</span>
+  }
 }
 @else{
   <div>

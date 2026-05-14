@@ -1,14 +1,16 @@
+import { Category } from "./category";
 import { Priority } from "./enums/priority";
 import { Status } from "./enums/status";
+import { User } from "./user";
 
-export interface Task {
+export interface Task{ //response dto
     id: number;
     title: string;
     description: string,
-    dueDate: string,
+    dueDate: Date,
     priority: Priority;
     status: Status;
-    categoryId: number;
-    ownerUserId: number;
-    assignedUserId: number;
+    category: Category;
+    ownerUser: User;
+    assignedUser?: User;
 }

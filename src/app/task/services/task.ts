@@ -2,6 +2,8 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Task } from '../../models/task';
 import { Observable } from 'rxjs';
+import { Priority } from '../../models/enums/priority';
+import { Status } from '../../models/enums/status';
 
 @Injectable({
   providedIn: 'root',
@@ -18,5 +20,9 @@ getTasks(): Observable<Task[]>{
 
 getTaskById(id: number):  Observable<Task> {
     return this.http.get<Task>(`${this.apiUrl}/${id}`);
+}
+
+submitApp(task: Task): Observable<Task> {
+  return this.http.post<Task>(this.apiUrl, task);
 }
 }
