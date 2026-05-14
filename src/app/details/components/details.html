@@ -1,34 +1,34 @@
 @if (task) {
 
-  <h2>Task Details</h2>
+<h2>Task Details</h2>
 
-  <h3>{{ task.title }}</h3>
+<h3>Title: {{ task.title }}</h3>
 
-  <p>{{ task.description }}</p>
+<p>Description: {{ task.description }}</p>
 
-  <div>
-    <small>Due Date: {{ task.dueDate }}</small>
-  </div>
+<div>
+  <small>Due Date: {{ task.dueDate }}</small>
+</div>
 
-  <div>
-    <small>Priority: {{ task.priority }}</small>
-  </div>
+<div>
+  <small>Priority: {{ task.priority }}</small>
+</div>
 
-  <div>
-    <small>Status: {{ task.status }}</small>
-  </div>
+<div>
+  <small>Status: {{ task.status }}</small>
+</div>
 
-  <hr>
+<hr>
 
-  <span> {{ task.category.title }}</span>
-  <span>{{ task.ownerUser.fullName }}</span>
-  @if(task.assignedUser){
-    <span>Assigned: {{ task.assignedUser.fullName }}</span>
-  }
+<span>Category: {{ task.category.title }}</span>
+<span>Owner: {{ task.ownerUser.fullName }}</span>
+@if(task.assignedUser){
+<span>Assigned: {{ task.assignedUser.fullName }}</span>
+}
+
 }
 @else{
-  <div>
-    Loading...
-  </div>
+<div>
+  Loading...
+</div>
 }
-

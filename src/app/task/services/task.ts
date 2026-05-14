@@ -10,19 +10,19 @@ import { Status } from '../../models/enums/status';
 })
 
 export class TaskService {
-private apiUrl='http://localhost:8081/api/tasks';
+  private apiUrl = 'http://localhost:8081/api/tasks';
 
-constructor(private http: HttpClient){}
+  constructor(private http: HttpClient) { }
 
-getTasks(): Observable<Task[]>{
-  return this.http.get<Task[]>(this.apiUrl);
-}
+  getTasks(): Observable<Task[]> {
+    return this.http.get<Task[]>(this.apiUrl);
+  }
 
-getTaskById(id: number):  Observable<Task> {
+  getTaskById(id: number): Observable<Task> {
     return this.http.get<Task>(`${this.apiUrl}/${id}`);
-}
+  }
 
-submitApp(task: Task): Observable<Task> {
-  return this.http.post<Task>(this.apiUrl, task);
-}
+  submitApp(task: Task): Observable<Task> {
+    return this.http.post<Task>(this.apiUrl, task);
+  }
 }

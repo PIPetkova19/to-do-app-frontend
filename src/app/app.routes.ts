@@ -5,11 +5,11 @@ import { CategoryComponent } from './category/components/category';
 import { TaskComponent } from './task/components/task';
 import { DetailsComponent } from './details/components/details';
 
-export const routes: Routes = [  
+export const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'users', component: UserComponent },
-  {path: 'categories',component:CategoryComponent},
-  {path:'tasks', component:TaskComponent},
-  {path:'details/:id', component:DetailsComponent}
+  { path: 'categories', component: CategoryComponent },
+  { path: 'tasks', component: TaskComponent },
+  { path: 'details/:id', component: DetailsComponent }
 
 ];

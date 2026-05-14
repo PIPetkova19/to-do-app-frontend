@@ -19,7 +19,7 @@ export class DetailsComponent implements OnInit {
     private route: ActivatedRoute,
     private service: TaskService,
     private cdr: ChangeDetectorRef,
-  ) {}
+  ) { }
 
   ngOnInit() {
 

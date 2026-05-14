@@ -1,18 +1,18 @@
 <h2>List of users</h2>
 
-<form [formGroup]="applyForm" (ngSubmit)="submitApp()"> 
-<label for="first-name">First Name</label>
-<input id="first-name" type="text" formControlName="firstName">
+<form [formGroup]="applyForm" (ngSubmit)="submitApp()">
+  <label for="first-name">First Name</label>
+  <input id="first-name" type="text" formControlName="firstName">
 
 
-<label for="last-name">Last Name</label>
-<input id="last-name" type="text" formControlName="lastName">
+  <label for="last-name">Last Name</label>
+  <input id="last-name" type="text" formControlName="lastName">
 
 
-<label for="email">email</label>
-<input id="email" type="text" formControlName="email">
+  <label for="email">email</label>
+  <input id="email" type="text" formControlName="email">
 
-<button type="submit">Add</button>
+  <button type="submit">Add</button>
 </form>
 
 <ul>
@@ -21,6 +21,5 @@
     <span>{{ user.fullName }}</span>
     <span>{{ user.email }}</span>
   </li>
-}
+  }
 </ul>
-

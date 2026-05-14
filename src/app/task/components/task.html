@@ -1,34 +1,34 @@
 <h2>List of tasks</h2>
 
-<form [formGroup]="applyForm" (ngSubmit)="submitApp()"> 
-<label for="title">Title</label>
-<input id="title" type="text" formControlName="title">
+<form [formGroup]="applyForm" (ngSubmit)="submitApp()">
+  <label for="title">Title</label>
+  <input id="title" type="text" formControlName="title">
 
 
-<label for="description">Description</label>
-<input id="description" type="text" formControlName="description">
+  <label for="description">Description</label>
+  <input id="description" type="text" formControlName="description">
 
 
-<label for="dueDate">Due Date</label>
-<input id="dueDate" type="text" formControlName="dueDate">
+  <label for="dueDate">Due Date</label>
+  <input id="dueDate" type="text" formControlName="dueDate">
 
-<label for="priority">Priority</label>
-<input id="priority" type="text" formControlName="priority">
-
-
-<label for="status">Status</label>
-<input id="status" type="text" formControlName="status">
+  <label for="priority">Priority</label>
+  <input id="priority" type="text" formControlName="priority">
 
 
-<label for="categoryId">Category id</label>
-<input id="categoryId" type="text" formControlName="categoryId">
+  <label for="status">Status</label>
+  <input id="status" type="text" formControlName="status">
 
-<label for="ownerUserId">Owner User Id</label>
-<input id="ownerUserId" type="text" formControlName="ownerUserId">
 
-<label for="assignedUserId">Assigned User id</label>
-<input id="assignedUserId" type="text" formControlName="assignedUserId">
-<button type="submit">Add</button>
+  <label for="categoryId">Category id</label>
+  <input id="categoryId" type="text" formControlName="categoryId">
+
+  <label for="ownerUserId">Owner User Id</label>
+  <input id="ownerUserId" type="text" formControlName="ownerUserId">
+
+  <label for="assignedUserId">Assigned User id</label>
+  <input id="assignedUserId" type="text" formControlName="assignedUserId">
+  <button type="submit">Add</button>
 </form>
 
 <ul>
@@ -43,15 +43,9 @@
     <span>Priority: {{ task.priority }}</span>
     <span>Status: {{ task.status }}</span>
 
-      <span>Category:  {{ task.category.title }}</span>
-  <span>Owner: {{ task.ownerUser.fullName }}</span>
-  @if(task.assignedUser){
-    <span>Assigned: {{ task.assignedUser.fullName }}</span>
-  }
-
     <a [routerLink]="['/details', task.id]">
-  See more
-</a>
+      See more
+    </a>
   </li>
-}
+  }
 </ul>

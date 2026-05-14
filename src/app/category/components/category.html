@@ -1,18 +1,18 @@
 <h2>List of categories</h2>
 
 
-<form [formGroup]="applyForm" (ngSubmit)="submitApp()"> 
-<label for="title">Title</label>
-<input id="title" type="text" formControlName="title">
+<form [formGroup]="applyForm" (ngSubmit)="submitApp()">
+  <label for="title">Title</label>
+  <input id="title" type="text" formControlName="title">
 
-<button type="submit">Add</button>
+  <button type="submit">Add</button>
 </form>
 
 
 <ul>
   @for (category of categories; track category.id) {
-    <li>
-      <span>{{ category.title }}</span>
-    </li>
+  <li>
+    <span>{{ category.title }}</span>
+  </li>
   }
 </ul>

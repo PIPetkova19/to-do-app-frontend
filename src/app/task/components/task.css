@@ -64,3 +64,67 @@ span {
 span:nth-of-type(1) { background: #fce4ec; } 
 span:nth-of-type(2) { background: #f8bbd0; } 
 span:nth-of-type(3) { background: #f3e5f5; } 
+
+form {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 24px;
+  background: #ffffff;
+  border-radius: 18px;
+  border: 1px solid #f8bbd0;
+  box-shadow: 0 6px 18px rgba(194, 24, 91, 0.08);
+
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+form label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #ad1457;
+  margin-bottom: -8px;
+}
+
+form input {
+  padding: 12px 14px;
+  border: 1px solid #f8bbd0;
+  border-radius: 12px;
+  font-size: 14px;
+  outline: none;
+  transition: 0.2s ease;
+
+  background: #fffafd;
+  color: #444;
+}
+
+form input:focus {
+  border-color: #ec407a;
+  box-shadow: 0 0 0 4px rgba(236, 64, 122, 0.15);
+  background: #ffffff;
+}
+
+form button {
+  margin-top: 10px;
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+
+  background: linear-gradient(135deg, #ec407a, #d81b60);
+  color: white;
+
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+form button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(216, 27, 96, 0.25);
+}
+
+form button:active {
+  transform: scale(0.98);
+}
