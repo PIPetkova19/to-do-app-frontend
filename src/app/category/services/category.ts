@@ -15,4 +15,13 @@ export class CategoryService {
   getCategories(): Observable<Category[]>{
     return this.http.get<Category[]>(this.apiUrl);
   }
+
+  submitApp(title: string): Observable<Category> {
+  
+    const category = {
+      title
+    };
+  
+    return this.http.post<Category>(this.apiUrl, category);
+  }
 }
